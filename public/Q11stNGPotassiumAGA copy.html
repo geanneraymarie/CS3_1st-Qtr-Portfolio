@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <script>
+        let age = window.prompt(`Enter your age: `);
+        let sure = window.confirm(`Is ${age} really your age?`);
+        if(!sure){
+            System.exit(0);
+        }
+        let numPerDay = window.prompt(`Input number consumed per day: `);
+        console.log;
+            var totalRequired = (365 - age) * (numPerDay) * (60);
+            document.write("You need " + totalRequired + " cups of yogurt to last you until the ripe old age of 60.")
+    </script>
+</body>
+</html>
