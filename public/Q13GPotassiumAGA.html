@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Third Graded Exercise</title>
+    <style>
+        p {
+            color: rgb(203, 148, 194);
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 30px;
+        }
+        button {
+            font-size: 20px;
+        }
+        p#result {
+            color:rgb(207, 201, 255);
+        }
+    </style>
+</head>
+<body style = "background-color: rgb(78, 37, 77);">
+        <h2 style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 40px; color:rgb(224, 33, 202)">Q1 3rd Graded Exercise submitted by Geanne Aga of 9 - Potassium</h2>
+        <p>Guess the number : ****</p>
+        <p>The number is from 1 to 100</p>
+        <p>Enter your guess : <input type="text" id="guessInput"></p>
+        <button onclick="checkIt()">Check It</button>
+
+        <p>Result:</p>
+        <p id="result"></p>
+
+<script>
+        var dNumber = Math.floor(Math.random() * 100) + 1;
+
+        function checkIt() {
+        var userGuess = document.getElementById("guessInput").value;
+
+        var guessNumber = parseInt(userGuess);
+
+        var resultElement = document.getElementById("result");
+
+        if (guessNumber < dNumber) 
+        {
+            resultElement.textContent = "Higher!";
+        } 
+        else if (guessNumber > dNumber) 
+        {
+            resultElement.textContent = "Lower!";
+        } 
+        else 
+        {
+            resultElement.textContent = "You are correct!";
+        }
+    }
+</script>
+</body>
+</html>
