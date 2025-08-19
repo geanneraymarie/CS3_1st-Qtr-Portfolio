@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<body style="background-color: rgb(235, 235, 217);">
+        <title>Q1 2nd Graded Exercise submitted by Geanne Aga of 9 - Potassium</title>
+        <h2 style="color: rgb(66, 73, 135); font-family: Verdana; font-size: 40px;">Q1 2nd Graded Exercise submitted by Geanne Aga of 9 - Potassium</h2>
+        <style>
+                label{
+                        color:rgb(45, 123, 142);
+                        font-family: Verdana, Geneva, Tahoma, sans-serif;
+                        font-size: 30px;
+                }
+                button{
+                        color:rgb(0, 0, 0);
+                        font-family: Verdana, Geneva, Tahoma, sans-serif;
+                        font-size: 25px;
+                }
+                p{
+                        color:rgb(129, 78, 135);
+                        font-family: Verdana, Geneva, Tahoma, sans-serif;
+                        font-size: 30px;
+                }
+        </style>
+        <label for="mealPrice">Meal Price:</label><br>
+        <input type="text" id="mealPrice" name="mealPrice"><br><br>
+        
+        <label for="tip">Tip:</label><br>
+        <input type="text" id="tip" name="tip"><br><br>
+        
+        <label for="serviceCharge">Service Charge:</label><br>
+        <input type="text" id="serviceCharge" name="serviceCharge"><br><br>
+    
+        <button onclick="totalMeal()">Accept Input</button>
+
+        <p id="totalMealOutput">Total Meal: </p>
+
+        <script>
+            function totalMeal() {
+                let mealPrice = parseFloat(document.getElementById("mealPrice").value);
+                let tip = parseFloat(document.getElementById("tip").value);
+                let serviceCharge = parseFloat(document.getElementById("serviceCharge").value);
+
+                if (isNaN(mealPrice) || isNaN(tip) || isNaN(serviceCharge)) {
+                document.getElementById("totalMealOutput").textContent = "Total Meal: Please enter valid numbers.";
+                return;
+                }
+                let totalCost = mealPrice + tip + ((serviceCharge / 100) * mealPrice);
+
+                let formattedTotalCost = totalCost.toFixed(2)
+
+                let outputElement = document.getElementById('totalMealOutput');
+                outputElement.textContent = "Total Meal: " + formattedTotalCost;
+                }
+        </script>
+</body>
+</html>
