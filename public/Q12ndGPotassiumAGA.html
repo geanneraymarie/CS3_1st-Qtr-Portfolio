@@ -38,11 +38,7 @@
                 let mealPrice = parseFloat(document.getElementById("mealPrice").value);
                 let tip = parseFloat(document.getElementById("tip").value);
                 let serviceCharge = parseFloat(document.getElementById("serviceCharge").value);
-
-                if (isNaN(mealPrice) || isNaN(tip) || isNaN(serviceCharge)) {
-                document.getElementById("totalMealOutput").textContent = "Total Meal: Please enter valid numbers.";
-                return;
-                }
+                
                 let totalCost = mealPrice + tip + ((serviceCharge / 100) * mealPrice);
 
                 let formattedTotalCost = totalCost.toFixed(2)
