@@ -2,7 +2,7 @@ button {
   padding: 20px 200px;
   font-size: 3rem;
   font-family: 'Courier New', Courier, monospace;
-  color: rgb(255, 255, 255); 
+  color: rgb(16, 3, 70); 
   background-image: linear-gradient(to right, #f9f586, #a1eafb);
   cursor: pointer;
   border-radius: 12px;
@@ -20,7 +20,7 @@ body {
   background-color: rgb(28, 15, 108);
 }
 .container {
-  background-color: rgb(162, 169, 79);
+  background-color: rgb(169, 127, 79);
   padding: 30px;
   border-radius: 8px;
   text-align: center;
