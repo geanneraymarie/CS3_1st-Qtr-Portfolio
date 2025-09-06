@@ -1,0 +1,17 @@
+body {
+    text-align: center;
+    color: #f0f0cd;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 40px;
+    background-color: #000000;
+    h1 {
+        color: rgb(59, 59, 142);
+        background-color: #e5e2e9;
+    }
+    h2 {
+        color: rgb(110, 116, 198)
+    }
+    h3 {
+        color: rgb(110, 116, 198)
+    }
+}

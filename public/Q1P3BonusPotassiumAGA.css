@@ -1,0 +1,20 @@
+.card {
+  width: 200px;
+  padding: 1em;
+  border: 2px solid #ffffff;
+  border-radius: 10px;
+  text-align: center;
+  background-color: #170b4d;
+}
+.card:hover {
+  background-color: #6e8ef0;
+}
+.emoji {
+  font-size: 3rem;
+}
+body {
+    color: #ffffff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 40px;
+    background-color: #000000;
+}
