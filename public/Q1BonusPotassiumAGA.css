@@ -1,0 +1,14 @@
+script {
+  background-image: url('04f19f0f0d1162503c5f5e5fc54310db.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace, sans-serif;
+    color: #0f1f86;
+    margin-top: 20px;
+}

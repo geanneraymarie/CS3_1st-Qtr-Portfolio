@@ -1,0 +1,52 @@
+<link rel="stylesheet" href="Q1BonusPotassiumAGA.css">
+<h1>⤷ ゛what's the magic word ? ˎˊ˗</h1>
+<p id="wordDisplay"></p>
+<input type="text" id="guessInput" maxlength="1">
+<button onclick="makeGuess()">Guess</button>
+<p id="message"></p>
+<p>Attempts: <span id="attemptCount">0</span></p>
+
+<script>
+  let secretWord = ["p", "l", "e", "a", "s", "e"];
+  let guessedWord = ["_", "_", "_", "_", "_", "_"];
+  let attempts = 0;
+  const maxAttempts = 12;
+
+  document.getElementById("wordDisplay").textContent = guessedWord.join(" ");
+
+  function makeGuess() {
+    let guess = document.getElementById("guessInput").value.toLowerCase();
+    if (!guess) return;
+
+    attempts++;
+    document.getElementById("attemptCount").textContent = attempts;
+
+    let correct = false;
+
+    for (let i = 0; i < secretWord.length; i++) {
+      if (secretWord[i] === guess) {
+        guessedWord[i] = guess;
+        correct = true;
+      }
+    }
+
+    document.getElementById("wordDisplay").textContent = guessedWord.join(" ");
+    guessInput.value = "";
+
+    if (guessedWord.join("") === secretWord.join("")) {
+      message.textContent = "you got it! ദ്ദി ˉ͈̀꒳ˉ͈́ )✧";
+      guessInput.disabled = true;
+      guessButton.disabled = true;
+      return;
+    }
+
+    if (attempts >= maxAttempts) {
+      message.textContent = "you lost ૮(˶╥︿╥)ა the magic word is please !" + secretWord.join("");
+      guessInput.disabled = true;
+      guessButton.disabled = true;
+      return;
+    }
+
+    message.textContent = correct ? "correct ◝(ᵔᗜᵔ)◜" : "try again (•́ ᴖ •̀)";
+  }
+</script>
