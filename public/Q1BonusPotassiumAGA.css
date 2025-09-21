@@ -1,5 +1,5 @@
-script {
-  background-image: url('04f19f0f0d1162503c5f5e5fc54310db.jpg');
+body {
+  background-image: url('9a67f3d0a35fdad75a22ac7c835dde24.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -11,4 +11,26 @@ h1 {
     font-family: 'Courier New', Courier, monospace, sans-serif;
     color: #0f1f86;
     margin-top: 20px;
+}
+.container {
+    max-width: 700px;
+    margin: 250 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+}
+input, button {
+    font-size: 18px;
+    padding: 10px;
+    margin: 10px 5px;
+    border-radius: 10px;
+    border: 2px solid #daad54;
+    text-align: center;
+}
+.message{
+    font-size: 20px;
+    margin-top: 20px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace, sans-serif;
+    color: #0f1f86;
 }
